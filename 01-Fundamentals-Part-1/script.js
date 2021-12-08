@@ -24,3 +24,22 @@ let mySecondJob = "teacher";
 let job1 = "programmer";
 let job2 = "teacher";
 console.log(myFirstJob);
+
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+console.log(typeof javascriptIsFun);
+console.log(typeof person);
+console.log(typeof PI);
+console.log(typeof "akshat");
+console.log(typeof 32);
+console.log(typeof $);
+javascriptIsFun = "manoj";
+console.log(typeof javascriptIsFun);
+ 
+let year;
+console.log(year);
+console.log(typeof year);
+year = 2000;
+console.log(typeof year);
+// bug of typeof,  it's not an object 
+// console.log(typeof null);
