@@ -52,3 +52,28 @@ const birthyear = 1991;
 // const job;
 var job = "programmer";
 job = "teacher";
+
+//Basic operaters
+// Math operaters
+const now = 2021;
+const ageHaresh = now - 1989;
+const ageJanmejay = now - 2015;
+console.log(ageHaresh, ageJanmejay);
+console.log(ageHaresh * 2, ageHaresh / 10, 2 ** 3);
+//2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+// concatenation
+const firstName = 'Manish';
+const lastName = "Chaudhary";
+console.log(firstName + " " + lastName);
+// Assignment operaters
+let x = 10 + 5; //15
+x += 10; // x = x + 10 =25
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1 = 101
+x--;
+x--;
+console.log(x);
+// Comparison operaters
+console.log(ageHaresh > ageJanmejay); // >, < , >= , <=
+console.log(ageJanmejay >= 6);
+const isFullAge = ageJanmejay >= 18;
