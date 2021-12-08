@@ -43,3 +43,12 @@ year = 2000;
 console.log(typeof year);
 // bug of typeof,  it's not an object 
 // console.log(typeof null);
+// let,const and var
+let age = 30;
+age = 31;
+    //eventually
+const birthyear = 1991;
+// birthyear = 1990;
+// const job;
+var job = "programmer";
+job = "teacher";
