@@ -77,3 +77,16 @@ console.log(x);
 console.log(ageHaresh > ageJanmejay); // >, < , >= , <=
 console.log(ageJanmejay >= 6);
 const isFullAge = ageJanmejay >= 18;
+
+//Operater Precedence
+// JavaScript has a well-defined order of operator precedence.
+const now = 2021;
+const ageHaresh = now - 1989;
+const ageJanmejay = now - 2015;
+console.log(now - 1989 > now - 2015);
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+// mdn operater precedence
+const averageAge = (ageHaresh + ageJanmejay) / 2;
+console.log(ageHaresh, ageJanmejay, averageAge);
