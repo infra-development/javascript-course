@@ -90,7 +90,7 @@ console.log(x, y);
 // mdn operater precedence
 const averageAge = (ageHaresh + ageJanmejay) / 2;
 console.log(ageHaresh, ageJanmejay, averageAge);
-*//*
+*/
 // Coding Challenge #1
 // Mark and John are trying to compare their BMI (Body Mass Index), which is
 // calculated using the formula:
@@ -124,7 +124,7 @@ console.log(markBMI, johnBMI);
 const markHigherBMI = markBMI > johnBMI;
 // const johnHigherBMI = johnBMI > markBMI;
 console.log(markHigherBMI);
-*//*
+/*
 //Strings and Template Literals
 firstName = "Kaushik";
 const job = 'teacher';
@@ -141,7 +141,7 @@ lines');
 console.log(`String with
 multipale
 lines`);
-*/
+*//*
 const age = 16;
 // const isEnoughAge = age >= 18;
 if (age >= 18) {
@@ -158,3 +158,19 @@ if (birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+*/
+// Coding Challenge #2
+// Use the BMI example from Challenge #1, and the code you already wrote, and
+// improve it.
+// Your tasks:
+// 1. Print a nice output to the console, saying who has the higher BMI. The message
+// is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+// BMI (28.3) is higher than John's (23.9)!"
+// Hint: Use an if/else statement 😉
+// GOOD LUCK 😀
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI}!)`);
+}
