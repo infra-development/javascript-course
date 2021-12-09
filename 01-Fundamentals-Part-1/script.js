@@ -1,4 +1,4 @@
-let js = "kaushik";
+/*let js = "kaushik";
 if (js = "kaushik") alert("kaushik chaudhary is king of the world");
 console.log(32 * 2 - 33);
 console.log("Naresh");
@@ -24,7 +24,7 @@ let mySecondJob = "teacher";
 let job1 = "programmer";
 let job2 = "teacher";
 console.log(myFirstJob);
-
+*//*
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 console.log(typeof javascriptIsFun);
@@ -52,7 +52,7 @@ const birthyear = 1991;
 // const job;
 var job = "programmer";
 job = "teacher";
-
+*//*
 //Basic operaters
 // Math operaters
 const now = 2021;
@@ -62,7 +62,7 @@ console.log(ageHaresh, ageJanmejay);
 console.log(ageHaresh * 2, ageHaresh / 10, 2 ** 3);
 //2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 // concatenation
-const firstName = 'Manish';
+firstName = 'Manish';
 const lastName = "Chaudhary";
 console.log(firstName + " " + lastName);
 // Assignment operaters
@@ -77,7 +77,7 @@ console.log(x);
 console.log(ageHaresh > ageJanmejay); // >, < , >= , <=
 console.log(ageJanmejay >= 6);
 const isFullAge = ageJanmejay >= 18;
-
+*//*
 //Operater Precedence
 // JavaScript has a well-defined order of operator precedence.
 const now = 2021;
@@ -90,7 +90,7 @@ console.log(x, y);
 // mdn operater precedence
 const averageAge = (ageHaresh + ageJanmejay) / 2;
 console.log(ageHaresh, ageJanmejay, averageAge);
-
+*//*
 // Coding Challenge #1
 // Mark and John are trying to compare their BMI (Body Mass Index), which is
 // calculated using the formula:
@@ -124,3 +124,21 @@ console.log(markBMI, johnBMI);
 const markHigherBMI = markBMI > johnBMI;
 // const johnHigherBMI = johnBMI > markBMI;
 console.log(markHigherBMI);
+*//*
+//Strings and Template Literals
+firstName = "Kaushik";
+const job = 'teacher';
+const birthyear = 2000;  
+const year = 2021;
+const kaushik = "I'm " + firstName + ", a " + (year - birthyear) + " years old " + job + "!";
+console.log(kaushik);
+const newKaushik = `I'm ${firstName}, a ${year-birthyear} year old ${job}!`;
+console.log(newKaushik)
+console.log(`Just a regular string...`);
+console.log('String with \n\
+multipale\n\
+lines');
+console.log(`String with
+multipale
+lines`);
+*/
