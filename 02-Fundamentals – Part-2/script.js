@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 let hasDriversLicense = false;
 const passTest = true;
 
@@ -59,3 +59,17 @@ const yearsUntilRetirement = (birthyear,firstname) => {
     return `${firstname} retires in ${retirment} years`;
 }
 console.log(yearsUntilRetirement(2001, 'Kaushik'));
+*/
+function cutFruitPieces(fruit){
+    return fruit * 3;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applesPieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `juice with ${applesPieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 4));
+
