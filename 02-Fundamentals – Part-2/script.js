@@ -171,3 +171,48 @@ scoreDolhins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolhins, scoreKoalas);
 checkWinner(scoreDolhins, scoreKoalas);
+
+
+// Array 
+const friend1 = 'Haresh';
+const friend2 = 'Naresh';
+const friend3 = 'Mahesh';
+
+
+const friends = ['Haresh', 'Naresh', 'Mahesh'];
+console.log(friends); 
+
+const year = new Array(2000, 2001, 2002, 2004);
+// Retrive data(Element) frome array (array are zero base)
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]); //JavaScript expects an expression, not a statement
+
+friends[2] = 'Jay';
+console.log(friends);
+
+
+const firstName = "Kaushik";
+const Kaushik = [firstName, 'Chaudhary', 2037 - 2000, 'teacher', friends];
+console.log(Kaushik);
+console.log(Kaushik.length);
+
+const years = [2000, 2001, 2002, 2004];
+function calcAge(birthyear) {
+    return 2037 - birthyear;
+}
+
+console.log(calcAge(years[0])); 
+console.log(calcAge(years[1])); 
+console.log(calcAge(years[years.length - 1]));
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[2]), calcAge(years[years.length - 1])];
+console.log(ages);
+
