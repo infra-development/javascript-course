@@ -172,7 +172,7 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolhins, scoreKoalas);
 checkWinner(scoreDolhins, scoreKoalas);
 
-
+/*
 // Array 
 const friend1 = 'Haresh';
 const friend2 = 'Naresh';
@@ -215,4 +215,33 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[2]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+//Basic Array Operations(Methods)
+// Add elements
+const friends = ['Haresh', 'Naresh', 'Mahesh'];
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
 
+friends.unshift('Manoj');
+console.log(friends);
+
+// Remove elements
+const popped = friends.pop(); // Last
+console.log(popped)
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Haresh'));
+console.log(friends.indexOf('Jess'));
+
+friends.push(23);
+console.log(friends.includes('Haresh'));
+console.log(friends.includes('Jess'));
+console.log(friends.includes(23));
+
+if (friends.includes('Naresh')) {
+    console.log('You have a friend called Naresh');
+}
