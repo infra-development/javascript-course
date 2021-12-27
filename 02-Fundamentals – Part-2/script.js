@@ -245,7 +245,7 @@ console.log(friends.includes(23));
 if (friends.includes('Naresh')) {
     console.log('You have a friend called Naresh');
 }
-
+/*
 // Coding Challenge #2
 // Steven is still building his tip calculator, using the same rules as before: Tip 15% of
 // the bill if the bill value is between 50 and 300, and if the value is different, the tip is
@@ -289,4 +289,20 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
 const total = [calcTip(bills[0]) + bills[0], calcTip(bills[1]) + bills[1], calcTip(bills[2] + bills[2])];
 console.log(bills, tips, total);
-  
+*/
+
+const kaushikArray = [
+    'Kaushik',
+    'Chaudhary',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const kaushik = {
+    firstName: "Kaushik",
+    lastName: "Chaudhary",
+    age: 2037 - 2000,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
