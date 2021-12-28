@@ -147,7 +147,7 @@ const checkWinner = function (avgDolphins, avgKoalas) {
     }
 }
 console.log(checkWinner(scoreDolphins, scoreKoalas));
-*/
+*//*
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 
 // Test data 1
@@ -171,8 +171,7 @@ scoreDolhins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolhins, scoreKoalas);
 checkWinner(scoreDolhins, scoreKoalas);
-
-/*
+*//*
 // Array 
 const friend1 = 'Haresh';
 const friend2 = 'Naresh';
@@ -215,7 +214,7 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[2]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
+*//*
 //Basic Array Operations(Methods)
 // Add elements
 const friends = ['Haresh', 'Naresh', 'Mahesh'];
@@ -245,7 +244,7 @@ console.log(friends.includes(23));
 if (friends.includes('Naresh')) {
     console.log('You have a friend called Naresh');
 }
-/*
+*//*
 // Coding Challenge #2
 // Steven is still building his tip calculator, using the same rules as before: Tip 15% of
 // the bill if the bill value is between 50 and 300, and if the value is different, the tip is
@@ -423,8 +422,7 @@ console.log(mark['calcBMI'](), john['calcBMI']());
 // 3. Log to the console who has the higher BMI, together with the full name and the
 // respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 console.log(`${mark.bmi > john.bmi ? 'Mark' : "John"}'s BMI (${mark.bmi > john.bmi ? mark.bmi : john.bmi}) is higher than ${mark.bmi < john.bmi ? 'Mark' : 'John'}'s (${mark.bmi < john.bmi ? mark.bmi : john.bmi})`);
-*/
-
+*//*
 //iteration the for loop
 console.log('Lifting weights repetition  ');
 console.log('Lifting weights repetition 2');
@@ -440,4 +438,47 @@ console.log('Lifting weights repetition 10');
 // for loop keeps running while condition is TRUE
 for (let rep = 1; rep <= 30; rep++){
     console.log(`Lifting weights repetition ${rep}`);
+}
+*/
+
+// loop throw Arrays
+const kaushik = [
+    'Kaushik',
+    'Chaudhary',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const types = [];
+for (let i = 0; i < kaushik.length; i++){
+    // Reading from kaushik array
+    console.log(kaushik[i], typeof kaushik[i]); 
+
+    // Filling types array  
+    // types[i] = typeof kaushik[i];
+    types.push(typeof kaushik[i]);
+}
+console.log(types)
+
+const years = [1991, 2007, 1967, 2020];
+// console.log(years);
+const age = [0];
+for (let i = 0; i < years.length; i++){
+    age.push(2037 - years[i]);
+}
+console.log(age);
+
+// continue and break
+console.log('--- ONLY STRINGS ---');  
+for (let i = 0; i < kaushik.length; i++){
+    if (typeof kaushik[i] !== 'string ') continue;
+
+    console.log(kaushik[i], typeof kaushik[i]);
+}
+console.log('--- BREAK WITH NUMBER ---');  
+for (let i = 0; i < kaushik.length; i++){
+    if (typeof kaushik[i] === 'number ') break;
+    // console.log(23);  
+    console.log(kaushik[i], typeof kaushik[i]);
 }
