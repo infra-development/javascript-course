@@ -383,7 +383,7 @@ console.log(jonas.age);
 // "Jonas is a 46-year old teacher, and he has a driver's license"
 console.log(jonas.getSummary());
 console.log(jonas['getSummary']()); 
-*/
+*//*
 // Coding Challenge #3
 // Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
 // implement the calculations! Remember: BMI = mass / height ** 2 = mass
@@ -423,3 +423,21 @@ console.log(mark['calcBMI'](), john['calcBMI']());
 // 3. Log to the console who has the higher BMI, together with the full name and the
 // respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 console.log(`${mark.bmi > john.bmi ? 'Mark' : "John"}'s BMI (${mark.bmi > john.bmi ? mark.bmi : john.bmi}) is higher than ${mark.bmi < john.bmi ? 'Mark' : 'John'}'s (${mark.bmi < john.bmi ? mark.bmi : john.bmi})`);
+*/
+
+//iteration the for loop
+console.log('Lifting weights repetition  ');
+console.log('Lifting weights repetition 2');
+console.log('Lifting weights repetition 3');
+console.log('Lifting weights repetition 4');
+console.log('Lifting weights repetition 5');
+console.log('Lifting weights repetition 6');
+console.log('Lifting weights repetition 7');
+console.log('Lifting weights repetition 8');
+console.log('Lifting weights repetition 9');
+console.log('Lifting weights repetition 10');
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 30; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+}
