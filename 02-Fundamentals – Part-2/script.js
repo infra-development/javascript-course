@@ -289,8 +289,8 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
 const total = [calcTip(bills[0]) + bills[0], calcTip(bills[1]) + bills[1], calcTip(bills[2] + bills[2])];
 console.log(bills, tips, total);
-*/
-
+*//*
+// Objects
 const kaushikArray = [
     'Kaushik',
     'Chaudhary',
@@ -306,7 +306,7 @@ const kaushik = {
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
 };
-
+*//*
 //challenge
 // "Jonas has 3 friends, and his best friend is called Michael"
 
@@ -341,3 +341,45 @@ console.log(jonas);
 //challenge
 // "Jonas has 3 friends, and his best friend is called Michael"
 console.log(`${jonas.firstName} has ${jonas['friends'].length} friends, and his best friend is called ${jonas['friends'][0]}`);
+*/
+// Function property function store as value (function expresion)
+// 'this' keyword for replace objects name in objects declaration 
+const jonas = {
+    firstName: 'Kaushik',
+    lastName: 'Chaudhary',
+    birthyear: 2000,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthyear) {
+    //     return 2037 - birthyear;
+    // }
+    // calcAge: function () {
+    //    // console.log(this);      // this keyword use for replace object name
+    //     return 2037 - this.birthyear;
+    // } 
+    calcAge: function () {
+        this.age = 2037 - this.birthyear;
+         return this.age;
+    },
+    getSummary: function () {
+        const ktring = console.log(`${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'No'} driver's license`);
+        return ktring;
+    }
+};
+
+console.log(jonas.calcAge());
+// console.log(jonas['calcAge'](1991)); 
+
+// console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+// Challenge
+// "Jonas is a 46-year old teacher, and he has a driver's license"
+console.log(jonas.getSummary());
+console.log(jonas['getSummary']()); 
