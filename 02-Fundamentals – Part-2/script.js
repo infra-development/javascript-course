@@ -482,7 +482,7 @@ for (let i = 0; i < kaushik.length; i++){
     // console.log(23);  
     console.log(kaushik[i], typeof kaushik[i]);
 }
-*/
+*//*
 const kaushik = [
     'Kaushik',
     'Chaudhary',
@@ -503,4 +503,22 @@ for (let exercise = 1; exercise <= 3; exercise++){
     for (let rep = 1; rep <= 5; rep++){
         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
     }
+}
+*/
+for (let rep = 1; rep <= 10; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+}
+//while loop
+let rep= 0
+while (rep <= 10) {
+    console.log(`while: Lifting weights repetition ${rep}`);
+    rep++;
+}
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice); 
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
 }
