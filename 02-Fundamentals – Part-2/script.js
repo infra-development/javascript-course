@@ -440,7 +440,7 @@ for (let rep = 1; rep <= 30; rep++){
     console.log(`Lifting weights repetition ${rep}`);
 }
 */
-
+/*
 // loop throw Arrays
 const kaushik = [
     'Kaushik',
@@ -481,4 +481,26 @@ for (let i = 0; i < kaushik.length; i++){
     if (typeof kaushik[i] === 'number ') break;
     // console.log(23);  
     console.log(kaushik[i], typeof kaushik[i]);
+}
+*/
+const kaushik = [
+    'Kaushik',
+    'Chaudhary',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+//looping Backwards 
+//0,1,....,4
+//4,3,...,0
+for (let i = kaushik.length - 1; i >= 0; i--){
+    console.log(i, kaushik[i]);
+}
+//Loops in Loops
+for (let exercise = 1; exercise <= 3; exercise++){
+    console.log(`----------- Starting exercise ${exercise}`);
+    for (let rep = 1; rep <= 5; rep++){
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
 }
