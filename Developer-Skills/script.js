@@ -83,7 +83,7 @@ console.log(calcAge(1991));
     6.JOB READY (But the learning never stops)
 */
 
- /*   HOW TO FAIL AT SOLVING PROBLEMS 
+ /*   HOW TO FAIL AT SOLVING PROBLEMS
 1.Stya clam and slow down, don't just jump at a problem without a plan
 2.Take a very logical and rational approach(programming is just logic, in the end)
 
@@ -93,4 +93,81 @@ console.log(calcAge(1991));
     2. Divide and conquer: Break a big problem into smaller sub-problems.
     3. Don't be afraid to do as much research as you have to
     4. for bigger problems, write psedo-code befor writing the actual code
-*/
+*//*
+    // PROBLEM
+// Ew work for a company building a smart home thermometer. Our most recent task is this: "Given an
+    array of temperatures of one day, calculate the temperature amplitude.
+    keep in mind that some times there might be a sensor error."*/
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+// 1)what is amplitude answer: difference between highest | lowest
+    // 2)calculate amplitude
+    // 3)ignored error
+    // 4)how to calculate amplitude
+    // 5)how to find max and min of the array
+    // 6)substract min into max to find out amplitude
+// 1)Understanding the problem
+// - What is temp amplitude? Answer: difference
+// between highest and lowest temp
+// -how to compute max and min temperatures?
+// -what's a sensor error? And what do do?
+
+// 2) Breaking up into sub-problems
+// -How to ignore errors?
+// -Find max value in temp array 
+// -Find min value in temp array
+// -subtract min from max (amplitude) and return it 
+
+
+    
+const clacTempAmplitude = function (temps) {
+    let max = temps[0];
+    let min = temps[0];
+    for (let i = 0; i < temps.length; i++) {
+        const curTemp = temps[i];
+        if (typeof curTemp !== 'number') continue;
+        if (curTemp > max) max = curTemp;
+        if (curTemp < min) min = curTemp;
+    }
+    
+    console.log(max);
+    console.log(min);
+    return max - min;
+};
+
+const amplitude = clacTempAmplitude(temperatures);
+console.log(amplitude);
+
+// PROBLEM 2: 
+// Function should now receive 2 arrays of temps
+
+// 1)understanding the problem
+// -with 2 arrays, should we implement functionality 
+// twice? NO!  Just merge two arrays.
+
+// 2)Breaking up into sub-problems
+// -How to mearge 2 arrays?
+
+
+
+const clacTempAmplitudeNew = function (t1, t2) {
+
+    const temps = t1.concat(t2);
+    console.log(temps);
+    
+    let max = temps[0];
+    let min = temps[0];
+
+    for (let i = 0; i < temps.length; i++) {
+        const curTemp = temps[i];
+        if (typeof curTemp !== 'number') continue;
+
+        if (curTemp > max) max = curTemp;
+        if (curTemp < min) min = curTemp;
+    }
+    
+    console.log(max, min);
+    return max - min;
+};
+const amplitudeNew = clacTempAmplitudeNew ([3,5,1],[6,7,8 ]);
+console.log(amplitudeNew);
