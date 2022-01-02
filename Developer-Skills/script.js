@@ -82,3 +82,15 @@ console.log(calcAge(1991));
     5.Round up your skillset with best practices and tools (git,testing,..)
     6.JOB READY (But the learning never stops)
 */
+
+ /*   HOW TO FAIL AT SOLVING PROBLEMS 
+1.Stya clam and slow down, don't just jump at a problem without a plan
+2.Take a very logical and rational approach(programming is just logic, in the end)
+
+4 steps to solve any problem
+  1.Make sure you 100% understand the problem.Ask the right questions to get 
+    a clear picture of the problem
+    2. Divide and conquer: Break a big problem into smaller sub-problems.
+    3. Don't be afraid to do as much research as you have to
+    4. for bigger problems, write psedo-code befor writing the actual code
+*/
