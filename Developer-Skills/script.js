@@ -6,7 +6,7 @@ if (x === 23) console.log(23);
 
 const calcAge = (birthyear) => 2037 - birthyear;
 
-console.log(calcAge(1991));*/ 
+console.log(calcAge(1991));*/
 /*  ________HOW TO FAIL AT LEARNING HOW TO CODE.____________
     He didn't have a clear goal at the beginning of his journey
     fix| - Set a specific, measurable 
@@ -161,8 +161,7 @@ const clacTempAmplitudeNew = function (t1, t2) {
 };
 const amplitudeNew = clacTempAmplitudeNew ([3,5,1],[6,7,8 ]);
 console.log(amplitudeNew);
-*/
-
+*//*
 const mesureKelvin = function () {
     const measurement = {
         type: 'temp',
@@ -202,3 +201,46 @@ const clacTempAmplitudeBug = function (t1, t2) {
 };
 const amplitudeBug = clacTempAmplitudeBug ([3,5,1],[6,7,8 ]);
 console.log(amplitudeBug);
+*/
+// Developer Skills & Editor Setup
+// Coding Challenge #1
+// Given an array of forecasted maximum temperatures, the thermometer displays a
+// string with the given temperatures. Example: [17, 21, 23] will print "... 17ºC in 1
+// days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+// Your tasks:
+// 1. Create a function 'printForecast' which takes in an array 'arr' and logs a
+// string like the above to the console. Try it with both test datasets.
+// 2. Use the problem-solving framework: Understand the problem and break it up
+// into sub-problems!
+// Test data:
+// § Data 1: [17, 21, 23]
+// § Data 2: [12, 5, -5, 0, 4]
+// GOOD LUCK 😀
+
+//problem-solving framework 
+
+// 1)understanding the problem
+    // transfoem array to string
+    // array transformed to string, separated by ...
+    // what is the x days? answer: index + 1
+     
+
+// 2)Breaking up into sub-problems
+// - Transform array into string
+// - transform each element to string with ºC
+// - strings needs to contain day (index + 1)
+//  - add ... between elements and start and end of string
+
+const testData1 = [17, 21, 23]
+const testData2 = [12, 5, -5, 0, 4]
+
+const printForecast = function (arr) {
+    let str = '';
+    for (let i = 0; i < arr.length; i++) {
+        str = str + `${arr[i]}ºC in ${i + 1} Days ...`;
+    }
+    console.log( '...' + str);
+};
+printForecast(testData1);
+printForecast(testData2);
+    
