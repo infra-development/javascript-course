@@ -17,7 +17,7 @@ document.querySelector('.score').textContent = 10;
 document.querySelector('.guess').value = 13;
 console.log(document.querySelector('.guess').value);
 */
-//for secret number --> random method
+//for secret number ---> random method
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 document.querySelector('.number').textContent = secretNumber;
 
