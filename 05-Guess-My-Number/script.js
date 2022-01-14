@@ -10,20 +10,18 @@ Dom is basicaly connection beetween Html documents and javascript code.
 console.log(
   (document.querySelector('.message').textContent = 'Correct Number!')
 );
-
 document.querySelector('.number').textContent = 13;
 document.querySelector('.score').textContent = 10;
-
 document.querySelector('.guess').value = 13;
 console.log(document.querySelector('.guess').value);
 */
 //for secret number ---> random method
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-
 //try to decreesing value of .score
 // let scored = Number(document.querySelector('.score').textContent);
 let scored = 20;
 console.log(scored);
+
 //added event listener -on click event --> we set function for value-> |print in .message|decrease value of .score
 document.querySelector('.check').addEventListener('click', function () {
   //created variable for stroing in .guess value
@@ -39,7 +37,9 @@ document.querySelector('.check').addEventListener('click', function () {
     //when the player win
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct Number!';
+
     document.querySelector('.number').textContent = secretNumber;
+
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
 
@@ -65,7 +65,6 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
-
 // JavaScript in the Browser: DOM and Events
 // Coding Challenge #1
 // Implement a game rest functionality, so that the player can make a new guess!
@@ -90,3 +89,4 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.guess').value = '';
 });
+
