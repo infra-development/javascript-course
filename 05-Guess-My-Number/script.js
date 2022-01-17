@@ -21,6 +21,7 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 // let scored = Number(document.querySelector('.score').textContent);
 let scored = 20;
 console.log(scored);
+let highscore = 0;
 
 //added event listener -on click event --> we set function for value-> |print in .message|decrease value of .score
 document.querySelector('.check').addEventListener('click', function () {
@@ -37,12 +38,14 @@ document.querySelector('.check').addEventListener('click', function () {
     //when the player win
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct Number!';
-
-    document.querySelector('.number').textContent = secretNumber;
-
     document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').textContent = secretNumber;
     document.querySelector('.number').style.width = '30rem';
 
+    if (scored > highscore) {
+      highscore = scored;
+      document.querySelector('.highscore').textContent = highscore;
+    }
     //when guess is too high
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = 'too High!';
@@ -90,3 +93,4 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').value = '';
 });
 
+// implementing High scores
