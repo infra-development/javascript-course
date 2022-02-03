@@ -1,38 +1,38 @@
 'use strict';
 
-function calcAge(birthyear) {
-  const age = 2037 - birthyear;
+// function calcAge(birthyear) {
+//   const age = 2037 - birthyear;
 
-  function printAge() {
-    let output = `${firstName}, You are ${age}, born in ${birthyear}`;
-    console.log(output);
+//   function printAge() {
+//     let output = `${firstName}, You are ${age}, born in ${birthyear}`;
+//     console.log(output);
 
-    if (birthyear >= 1981 && birthyear <= 1996) {
-      var milenial = true;
-      // Creating NEW variable with same name as outer scope's variable
-      const firstName = 'Haresh';
+//     if (birthyear >= 1981 && birthyear <= 1996) {
+//       var milenial = true;
+//       // Creating NEW variable with same name as outer scope's variable
+//       const firstName = 'Haresh';
 
-      // Reasssigning outer scope's variable
-      output = 'Output';
+//       // Reasssigning outer scope's variable
+//       output = 'Output';
 
-      const str = `Oh, and you're a milenial, ${firstName}`;
-      console.log(str);
+//       const str = `Oh, and you're a milenial, ${firstName}`;
+//       console.log(str);
 
-      function add(a, b) {
-        return a + b;
-      }
-    }
-    // console.log(str);
-    console.log(milenial);
-    // console.log(add(3, 2));
-    console.log(output);
-  }
-  printAge();
-  return age;
-}
+//       function add(a, b) {
+//         return a + b;
+//       }
+//     }
+//     // console.log(str);
+//     console.log(milenial);
+//     // console.log(add(3, 2));
+//     console.log(output);
+//   }
+//   printAge();
+//   return age;
+// }
 
-const firstName = 'kaushik';
-calcAge(1991);
+// const firstName = 'kaushik';
+// calcAge(1991);
 
 // variable
 console.log(me);
@@ -73,3 +73,36 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+
+console.log(this);
+
+const calcAge = function (birthyear) {
+  console.log(2037 - birthyear);
+  console.log(this);
+};
+calcAge(1991);
+
+const calcAgeArrow = birthyear => {
+  console.log(2037 - birthyear);
+  console.log(this);
+};
+calcAgeArrow(1980);
+
+const jonas = {
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+};
+jonas.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+matilda.calcAge = jonas.calcAge;
+matilda.calcAge();
+
+const f = jonas.calcAge;
+f();
