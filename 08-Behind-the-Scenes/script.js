@@ -107,7 +107,7 @@ matilda.calcAge();
 const f = jonas.calcAge;
 f();
 */
-
+/*
 const jonas = {
   firstName: 'jonas',
   year: 1991,
@@ -150,3 +150,20 @@ var addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5, 8, 12);
+*/
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'jonas',
+  age: 30,
+};
+
+const friend = me;
+friend.age = 27;
+console.log('friend:', friend);
+console.log('Me', me);
